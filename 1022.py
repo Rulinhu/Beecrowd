@@ -24,8 +24,8 @@ for i in range(a):
     print(str(n1) + '/' + str(d1) + ' = ', end='')
 
     for j in range(2, d1):
-            if ((n1 % j) == 0) and ((d1 % j) == 0):
-                n1 //= j
-                d1 //= j
+        while (n1 % j == 0) and (d1 % j == 0):
+            n1 = n1 // j
+            d1 = d1 // j
 
     print(str(n1) + '/' + str(d1))
