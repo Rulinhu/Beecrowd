@@ -7,11 +7,11 @@ while i >= 0 and i < q_e:
     faz[i] -= 1
     faz_atq[i] = 1
 
-    if (faz[i] + 1) % 2 == 0:
-        i -= 1
-    else:
+    if faz[i] % 2 == 0:
         i += 1
+    else:
+        i -= 1
 
-print(faz_atq, sum(faz))
+print(faz_atq.count(1), sum(faz))
 
-#=============================TIME LIMIT EXCEEDED :(
+#TIME LIMIT EXCEDEED
